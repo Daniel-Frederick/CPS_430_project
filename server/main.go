@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-
 	"server/db"
 	"server/handlers"
 )
@@ -16,6 +15,7 @@ func main() {
 
 	// Initialize tables + dummy data
 	db.InitializeTables()
+	db.InsertDummyData()
 
 	http.HandleFunc("/query", handlers.QueryHandler)
 

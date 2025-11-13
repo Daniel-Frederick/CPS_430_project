@@ -197,3 +197,4 @@ INSERT INTO ENROLLED_IN (studentId, enrollmentId, sectionNum, grade) VALUES
 ('S018', 'E018', 18, 'A'),
 ('S019', 'E019', 19, 'B+'),
 ('S020', 'E020', 20, 'A');
+
