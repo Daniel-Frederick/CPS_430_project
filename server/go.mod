@@ -1,4 +1,4 @@
-module react-go-sql
+module server
 
 go 1.25.4
 
