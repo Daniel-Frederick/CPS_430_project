@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/query": "http://localhost:8080",
+      "/query": "http://localhost:8081",
     },
   },
 })

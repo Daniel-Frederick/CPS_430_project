@@ -190,3 +190,4 @@ JOIN MAJOR m ON s.majorID = m.majorId
 LEFT JOIN ENROLLED_IN e ON s.studentId = e.studentId
 GROUP BY s.studentId
 ORDER BY approximate_age DESC;
+
