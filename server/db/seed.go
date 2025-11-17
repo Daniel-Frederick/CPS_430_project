@@ -6,7 +6,7 @@ import (
 
 // InsertDummyData populates initial data into all tables
 func InsertDummyData() {
-	log.Println("📝 Inserting dummy data...")
+	log.Println("Inserting dummy data...")
 
 	// Insert in order of dependencies
 	if err := insertMajors(); err != nil {
@@ -41,7 +41,7 @@ func InsertDummyData() {
 		log.Printf("⚠️ Failed to insert enrollments: %v", err)
 	}
 
-	log.Println("✅ Dummy data inserted successfully")
+	log.Println("Dummy data inserted successfully")
 }
 
 func insertMajors() error {

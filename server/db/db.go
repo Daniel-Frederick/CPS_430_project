@@ -14,13 +14,13 @@ func Init() {
 	var err error
 	DB, err = sql.Open("sqlite3", "./school.db")
 	if err != nil {
-		log.Fatalf("❌ Failed to open database: %v", err)
+		log.Fatalf("Failed to open database: %v", err)
 	}
 
 	if err = DB.Ping(); err != nil {
-		log.Fatalf("❌ Failed to ping database: %v", err)
+		log.Fatalf("Failed to ping database: %v", err)
 	}
 
-	log.Println("✅ Connected to database")
+	log.Println("Connected to database")
 }
 

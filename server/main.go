@@ -19,7 +19,7 @@ func main() {
 
 	http.HandleFunc("/query", handlers.QueryHandler)
 
-	fmt.Println("✅ Server running on http://localhost:8081")
+	fmt.Println("Server running on http://localhost:8081")
 	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
